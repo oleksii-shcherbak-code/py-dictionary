@@ -66,7 +66,7 @@ class Dictionary:
         while True:
             cell = self.table[index]
             if cell is None:
-                raise KeyError(f"Key not found: {key}")
+                raise KeyError(f"Key not founds: {key}")
 
             if cell.hash == hash_code and cell.key == key:
                 return cell.value
